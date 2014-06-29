@@ -1,0 +1,4 @@
+ScalaBegining
+=============
+
+Just Learning Scala
