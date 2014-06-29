@@ -1,0 +1,28 @@
+package testpackage
+
+abstract class calculations{
+					def calculate() : Double
+}
+
+class addition (a :Double , b: Double)  extends calculations{
+				  def calculate() : Double = ( a + b)
+}
+class substraction (a :Double , b: Double)  extends calculations{
+				  def calculate() : Double = if (a>b) a-b else b-a
+}
+class multiplication (a :Double , b: Double)  extends calculations{
+				  def calculate() : Double = a * b
+}
+class division (a :Double , b: Double)  extends calculations{
+				  def calculate() : Double = a/b
+}
+class mod (a :Double , b: Double)  extends calculations{
+				  def calculate() : Double = a%b
+}
+class abs (a :Double)  extends calculations{
+				  def calculate() : Double = if (a>0) a else -a
+}
+
+object testpackage{
+	println("Welcome to the Scala worksheet")
+}
